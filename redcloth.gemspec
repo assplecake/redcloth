@@ -4,14 +4,14 @@ $LOAD_PATH.unshift File.join(redcloth_dir, 'lib')
 require "redcloth/version"
 
 Gem::Specification.new do |s|
-  s.name        = "RedCloth"
+  s.name        = "assplecake-RedCloth"
   s.version     = RedCloth::VERSION.to_s
   s.authors     = ["Jason Garber", "why the lucky stiff", "Ola Bini"]
-  s.description = "Textile parser for Ruby."
+  s.description = "Textile parser for Ruby with auto_link support."
   s.summary     = RedCloth::SUMMARY
-  s.email       = "redcloth-upwards@rubyforge.org"
+  s.email       = "assplecake@gmail.com"
   s.homepage    = "http://redcloth.org"
-  s.rubyforge_project = "redcloth"
+  s.rubyforge_project = "assplecake-redcloth"
 
   s.rubygems_version   = "1.3.7"
   s.default_executable = "redcloth"
