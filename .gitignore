@@ -24,3 +24,5 @@ rdoc
 release
 tmp
 Gemfile.lock
+.rbenv-gemsets
+.rbenv-version
