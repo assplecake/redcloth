@@ -298,6 +298,10 @@ name: autolink at beginning of block
 in: 'http://google.com?q=mysearchterm is an autolink'
 auto_link_urls_html: '<p><a href="http://google.com?q=mysearchterm">http://google.com?q=mysearchterm</a> is an autolink</p>'
 ---
+name: autolink weirdness
+in: 'http://bit.ly/acdef?q=valentine%20gift is an autolink'
+auto_link_urls_html: '<p><a href="http://bit.ly/acdef?q=valentine%gift">http://bit.ly/acdef?q=valentine%gift</a> is an autolink</p>'
+---
 name: https autolink
 in: 'This is an autolink here: https://google.com?q=mysearchterm'
 auto_link_urls_html: '<p>This is an autolink here: <a href="https://google.com?q=mysearchterm">https://google.com?q=mysearchterm</a></p>'

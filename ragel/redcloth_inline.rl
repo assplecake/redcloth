@@ -32,7 +32,7 @@
   link_noquotes_noactions = ( '"' link_says_noquotes_noactions '":' uri ) ;
   bracketed_link = ( '["' link_says '":' %A uri %{ STORE("href"); } :> "]" ) >X ;
   auto_link_proto_or_dubs = ( ("http" "s"? "://" ) | "www.") ;
-  auto_link_url = ( auto_link_proto_or_dubs (uchar | reserved)* ) ;
+  auto_link_url = ( auto_link_proto_or_dubs (uchar | reserved | '%')* ) ;
   auto_link_in_a_tag = ( "<" [aA] space+ AttrSet* (AttrEnd)? ">" auto_link_url :> end_tag_noactions ) %T > X ;
   auto_link = ( auto_link_url >A %{ STORE_URL("href"); } ) > X ;
 
